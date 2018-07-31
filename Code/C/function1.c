@@ -9,7 +9,7 @@ int sumArray(int *data, int size) {
   return sum;
 }
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   int intArray[6] = {19, 12, 13, 14, 50, 0};
   int sum = sumArray(intArray, 6);
   printf("Sum is %d \n", sum);

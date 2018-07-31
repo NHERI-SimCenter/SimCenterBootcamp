@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   int intArray[5] = {1, 2, 3, 4, 5};
   intArray[0] = 21;
   int first = intArray[0];
