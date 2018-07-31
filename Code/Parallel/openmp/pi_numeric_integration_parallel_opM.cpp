@@ -13,10 +13,10 @@ int main(int argc, char **argv) {
 
 	int numP, procID;
 
-	double pi=0, time=0;
+	double pi=0, time1, time2;
 	
 	//clock_t start; //timer
-	time = omp_get_wtime();
+	time1 = omp_get_wtime();
 	//start = std::clock();
 	//cout<<start<<endl;
 	
@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
 	{
 		int tid = omp_get_thread_num();
 	 	int numT = omp_get_num_threads();
-		
+		cout<<numT<<endl;		
 
 		//integration
 		double aveNumStep=numSteps/numT;
@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 	}
 	cout<<pi<<endl;
 	//timer
-	time=omp_get_wtime();
-	cout<<time<<endl;
+	time2=omp_get_wtime();
+	cout<<time2-time1<<endl;
 	return 0;
 }
