@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 		
 
 		//integration
-		aveNumStep=numSteps/numT;
+		double aveNumStep=numSteps/numT;
 		if (tid<numT-1) {
 			for (int aa=aveNumStep*(tid-1); aa<aveNumStep*tid; aa++) {
 				double x= (float)aa*1.0/(float)numSteps;
