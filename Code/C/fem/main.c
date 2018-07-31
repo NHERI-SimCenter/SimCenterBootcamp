@@ -1,7 +1,7 @@
 #include "node.h"
 #include "domain.h"
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   Domain theDomain;
 
   domainAddNode(&theDomain, 1, 0.0, 0.0);
