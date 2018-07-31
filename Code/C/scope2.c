@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   if (2 > 1) {
     int x = 10;
     printf("LINE 5: x = %d\n",x);    

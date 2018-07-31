@@ -7,7 +7,7 @@ struct node {
 
 void nodePrint(struct node *);
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   struct node n1;
   struct node n2;
 
