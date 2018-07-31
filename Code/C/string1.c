@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   char greeting[] = "Hello";
   int length = strlen(greeting);
   printf("%s a string of length %d\n",greeting, length);

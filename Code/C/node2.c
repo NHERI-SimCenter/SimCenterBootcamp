@@ -8,7 +8,7 @@ typedef struct node {
 void nodePrint(Node *);
 void nodeSetup(Node *, int tag, double crd1, double crd2);
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   Node n1;
   Node n2;
 

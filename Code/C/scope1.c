@@ -1,7 +1,7 @@
 #include <stdio.h>
 int sum(int, int);
 int x = 20;
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   printf("LINE 5: x = %d\n",x);
 
   int x = 5;

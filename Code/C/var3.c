@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, const char **argv) {
+int main(int argc, char **argv) {
   int    i1 = 5;
   float  f1 = 1.2;
   double d1 = 1.0e6;
