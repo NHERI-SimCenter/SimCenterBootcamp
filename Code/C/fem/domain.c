@@ -14,6 +14,8 @@ void domainAddNode(Domain *theDomain, int tag, double crd1, double crd2) {
 
   if (theDomain->theNodes != NULL) {
     theNextNode->next = theDomain->theNodes;
+  } else {
+    theNextNode->next = NULL;
   }
   theDomain->theNodes = theNextNode;
 }
