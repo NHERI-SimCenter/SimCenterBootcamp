@@ -19,6 +19,8 @@ int main(int argc, const char **argv) {
     int tid = omp_get_thread_num();
     int numT = omp_get_num_threads();
     double sum = 0.;
+
+#pragma omp for
     for (int i=tid; i<DATA_SIZE; i+= numT)
       sum += a[i]*a[i];
 
