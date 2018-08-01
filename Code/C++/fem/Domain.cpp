@@ -15,15 +15,11 @@ Domain::getNode(int tag){
   Node *res = NULL;
 
   // create iterator & iterate over all elements
-  std::map<int, Node *>::iterator it = theNodes.begin();
+  std::map<int, Node *>::iterator it = theNodes.find(tag);
 
-  while (it != theNodes.end()) {
+  if (it != theNodes.end()) {
       Node *theNode = it->second;
-      if (theNode->GetTag() == tag) {
-	res = theNode;
-	break;
-      }
-      it++;
+      return theNode;
   }
   return res;
 }
