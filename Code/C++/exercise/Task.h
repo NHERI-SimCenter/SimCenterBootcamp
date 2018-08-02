@@ -16,8 +16,9 @@ class Task {
   double getDoubleResult(void);
   virtual void Print(ostream &s) = 0;
 
- private:
-  queue<Task *>taskQueue;
+ protected:
+  queue<Task *>taskQueue;  // making protected so subclasses can 
+                           // take own tasks and either addd int or double res
 };
 
 #endif

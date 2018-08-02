@@ -3,11 +3,11 @@
 #include "Task.h"
 
 Program::Program() {
-  taskQueue.empty();
+
 }
 
 Program::~Program() {
-  taskQueue.empty();
+
 }
 
 int 
@@ -24,6 +24,6 @@ Program::runTasks(ostream &s)
       theTask->runTask();
       theTask->Print(s);
       taskQueue.pop();
-    }
+  }
   return 0;
 }
