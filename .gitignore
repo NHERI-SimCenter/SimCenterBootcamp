@@ -46,3 +46,6 @@ uqFEM.pro.user
 *.json
 
 Makefile
+Code/Qt/Example1/Example1.pro.user
+Code/Qt/.DS_Store
+*.stash

@@ -2,11 +2,11 @@
 
 Task::Task()
 {
-  taskQueue.empty();
+
 }
 Task::~Task()
 {
-  taskQueue.empty();
+
 }
 int 
 Task::addTask(Task *theTask)
