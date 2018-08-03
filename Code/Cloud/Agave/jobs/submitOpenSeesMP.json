@@ -1,0 +1,23 @@
+{
+    "name": "OpenSeesMP demo",
+    "appId": "opensees-MP-2.5.0.6606u9",
+    "maxRunTime": "00:01:00",
+    "memoryPerNode": "1GB",
+    "nodeCount": 1,
+    "processorsPerNode": 32,
+    "requestedTime": "00:01:00",
+    "archive": true,
+    "archiveSystem":"designsafe.storage.default",
+    "parameters" : {
+      "inputScript":"Example.tcl"
+    },
+    "inputs": {
+      "inputDirectory": "agave://designsafe.storage.default/tg457427/dir1/OpenSeesExampleMP"
+    },
+    "notifications": [
+      {
+        "url" : "fmckenna@berkeley.edu",
+        "event": "*"
+      }
+    ]
+}
