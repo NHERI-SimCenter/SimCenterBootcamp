@@ -6,9 +6,9 @@
 # This script requests 1 node and 8 cores/node (out of total 64 avail)
 # for a total of 8 MPI tasks.
 #---------------------------------------------------------------------
-#SBATCH -J myjob          # Job name
-#SBATCH -o myjob.%j.out   # stdout; %j expands to jobid
-#SBATCH -e myjob.%j.err   # stderr; skip to combine stdout and stderr
+#SBATCH -J jiawei          # Job name
+#SBATCH -o jiawei.%j.out   # stdout; %j expands to jobid
+#SBATCH -e jiawei.%j.err   # stderr; skip to combine stdout and stderr
 #SBATCH -p development    # queue
 #SBATCH -N 1              # Number of nodes, not cores (64 cores/node)
 #SBATCH -n 8              # Total number of MPI tasks (if omitted, n=N)

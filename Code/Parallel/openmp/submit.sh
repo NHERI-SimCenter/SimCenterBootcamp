@@ -10,7 +10,7 @@
 #SBATCH -p normal           # Submit to the 'normal' or 'development' queue
 #SBATCH -N 1                # Total number of nodes requested (16 cores/node)
 #SBATCH -n 1                # Total number of mpi tasks requested
-#SBATCH -t 01:30:00         # Run time (hh:mm:ss) - 1.5 hours
+#SBATCH -t 00:00:10         # Run time (hh:mm:ss) - 1.5 hours
 # The next line is required if the user has more than one project
 # #SBATCH -A A-yourproject  # Allocation name to charge job against
 
@@ -20,5 +20,5 @@
 export OMP_NUM_THREADS=16
 
 # Run the OpenMP application
-./main.exe
+./a.out
 
